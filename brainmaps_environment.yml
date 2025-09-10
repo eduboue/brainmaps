@@ -1,0 +1,36 @@
+# To use:
+# conda env create -f brainmaps_environment.yml
+# conda activate brainmaps-env
+
+name: brainmaps-env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  # Python >=3.12
+  - python>=3.12
+
+  # Core scientific stack
+  - numpy
+  - scipy
+  - pandas
+
+  # Imaging & I/O
+  - pynrrd        # for reading/writing NRRD files
+  - imageio
+  - pillow
+
+  # Plotting / visualization
+  - matplotlib
+
+  # Utilities
+  - pyyaml        # in case you want to read/write YAML configs
+  - jsonschema    # for validating configs if needed
+
+  # Development tools
+  - ipython
+  - jupyterlab
+
+  # (Optional) testing and linting
+  - pytest
+  - black
