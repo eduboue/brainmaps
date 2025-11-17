@@ -1,15 +1,12 @@
+import copy
+import json
 import os
 import re
-import json
-from typing import List, Dict, Iterable, Any, Tuple, Optional, Literal
-from dataclasses import dataclass, field
+from dataclasses import dataclass
+from typing import Any, Dict, Iterable, List, Literal, Optional, Tuple
 import nrrd
 import numpy as np
 from numpy.typing import NDArray
-from typing import Tuple, List, Literal, Dict, Optional, Any
-from dataclasses import dataclass
-import copy
-import numpy as np
 from scipy.ndimage import gaussian_filter
 from tqdm import tqdm
 
